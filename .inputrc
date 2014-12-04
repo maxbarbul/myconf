@@ -1,0 +1,42 @@
+set meta-flag on
+set input-meta on
+set convert-meta off
+set output-meta on
+set editing-mode vi
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
+#"\e[1~": beginning-of-line
+#"\e[4~": end-of-line
+#"\e[5~": beginning-of-history
+#"\e[6~": end-of-history
+#"\e[3~": delete-char
+#"\e[2~": quoted-insert
+#"\e[5C": forward-word
+#"\e[5D": backward-word
+
+
+# When listing possible file completions, put / after directory names and * after programs
+set visible-stats on
+
+# Keep hidden files hidden when doing, for example, cp ~/ Tab
+# cp ~/. Tab will match hidden files
+set match-hidden-files off
+
+# Complete things that have been typed in the wrong case
+set completion-ignore-case on
+
+# List the possible completions when Tab is pressed
+#set show-all-if-ambiguous on
+
+# Make Meta+S cycle through the list
+#"\M-s": menu-complete
+

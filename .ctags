@@ -1,0 +1,9 @@
+--totals 
+--exclude=*.png
+--exclude=*.tpl 
+--exclude=*.jpg  
+--exclude=*.ini
+--exclude=.git
+--recurse=yes
+--tag-relative=yes
+

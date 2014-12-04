@@ -1,0 +1,36 @@
+[core]
+    compression = 9
+    pager = less
+    editor = vim
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    desc = describe
+    st = status
+    log1 = log --oneline
+    logs = log --stat
+	wdiff = diff  --word-diff=color 
+[user]
+    email = 
+    name = Maksym Barbul
+[merge]
+    tool = vimdiff
+[color]
+    ui = auto
+[color "status"]
+    branch = green
+[diff]
+    ;copy = true
+    renames = true
+    tool = vimdiff
+    context = 10
+    wordRegex = "\\(|\\)|\\{|\\}|,|:|;|[^[:space:]():;,{}]+"
+[gui]
+    fontdiff = -family \"Monaco\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+[difftool "vimdiff"]
+    cmd = vimdiff $LOCAL $REMOTE
+[commit]
+    template = ~/.git-commit-message
+[github]
+	user = maxbarbul
