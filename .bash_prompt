@@ -203,3 +203,4 @@ PS1="\[${BOLD}${USER_COLOR}\]\u \
 \[$PREPOSITION_COLOR\]at \
 \[$DEVICE_COLOR\]\h \
 $(get_prompt_symbol) \[$RESET\]"
+
