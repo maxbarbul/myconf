@@ -3,7 +3,7 @@
 # for examples
 
 # set keyboard fast typing
-xset r rate 170 60
+xset r rate 250 40
 
 # If not running interactively, don't do anything
 case $- in
@@ -31,12 +31,20 @@ shopt -s checkwinsize
 
 # change to their subdirectories from anywhere 
 # on the system without typing a full path
-CDPATH=".:..:../..:~/master:~"
-export PATH=$PATH:~/pear/bin
+CDPATH=".:..:../..:~/work:~"
 
-set editing-mode vi
+# set npm packages to local folder
+NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$NPM_PACKAGES/bin:$PATH:~/pear/bin"
 
-source ~/.git-completion.bash
+# set man pages accessible by npm
+unset MANPATH
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+# set editing-mode vi
+export EDITOR=vim
+
+# source ~/.git-completion.bash
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -55,3 +63,4 @@ fi
 
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
+

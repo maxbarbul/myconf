@@ -30,36 +30,3 @@
 #               Don't change code but formatting in this type of commit.
 # Doc       - fix doc block comments to use in auto documentation generation.
 #
-# Issue number
-# ------------
-#
-# Please use the full length of number like "00012345" instead of just "12345".
-# It could be optional but try to track all your work in mantis. 
-# Ask you team-leader for help.
-#
-# Feature|category
-# ----------------
-#
-# This is the identifier of system area like "Capacity & Quota"
-#
-# Categories: 
-#   Capacity & Quota
-#   Activity Views
-#   DashBoard
-#   Reports
-#   Community
-#   Work Skills
-#   MAP
-#   Mobile interfaces
-#   Routing
-#   Tools               - development or deployment tools like web_packer
-#   JS API              - core components like widgets or library objects
-#
-# See more description: https://wiki.etadirect.com/index.php/RD:Git#Commit_format
-# =============
-# Comments are very important for our product!
-# Uncomment lines below which describe your changes.
-#
-# Please make sure your comments above look good since they will
-# be added to release reports.
-#

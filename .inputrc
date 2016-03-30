@@ -2,7 +2,7 @@ set meta-flag on
 set input-meta on
 set convert-meta off
 set output-meta on
-set editing-mode vi
+# set editing-mode vi
 
 "\e[A": history-search-backward
 "\e[B": history-search-forward
