@@ -1,5 +1,5 @@
 # some more ls aliases
-alias ls='ls --color=auto '
+alias ls='ls -G '
 alias ll='ls -lFh '
 alias la='ll -A '
 alias l='ls -CF '
@@ -29,10 +29,10 @@ alias ports='netstat -tulanp '
 alias node-update='npm cache clean -f && npm install -g n && sudo n stable'
 # Virtual machine controlling
 # start
-alias vmstart="VBoxManage startvm vm101-002 --type headless"
+#alias vmstart="VBoxManage startvm vm101-002 --type headless"
 # stop VM
-alias vmstop="VBoxManage controlvm vm101-002 acpipowerbutton"
+#alias vmstop="VBoxManage controlvm vm101-002 acpipowerbutton"
 # list running virtual machiens
-alias vmls="VBoxManage list runningvms"
-alias vm="ssh maksym@vm101-002.ua3"
+#alias vmls="VBoxManage list runningvms"
+#alias vm="ssh maksym@vm101-002.ua3"
 

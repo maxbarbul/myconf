@@ -3,7 +3,7 @@
 # for examples
 
 # set keyboard fast typing
-xset r rate 250 40
+# xset r rate 250 40
 
 # If not running interactively, don't do anything
 case $- in
@@ -52,8 +52,8 @@ export EDITOR=vim
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+  elif [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
   fi
 fi
 
@@ -63,4 +63,8 @@ fi
 
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
+
+
+export NVM_DIR="/Users/Maksym_Barbul/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
