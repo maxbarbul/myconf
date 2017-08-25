@@ -2,6 +2,8 @@
   compression = 9
   pager = less
   editor = vim
+	excludesfile = ~/myconf/.gitignore
+	# autocrlf = true
 [alias]
   br = branch
   ci = commit
