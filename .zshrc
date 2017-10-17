@@ -12,9 +12,9 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/plat
 # Path to your oh-my-zsh installation.
 export ZSH=/home/maksym/.oh-my-zsh
 
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-  source /etc/profile.d/vte.sh
-fi
+# if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+#   source /etc/profile.d/vte.sh
+# fi
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -63,7 +63,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git thefuck git-extras copyfile copydir common-aliases command-not-found)
-plugins=(copyfile copydir common-aliases command-not-found battery zsh-syntax-highlighting zsh-better-npm-completion)
+plugins=(copyfile copydir taskwarrior common-aliases command-not-found battery zsh-syntax-highlighting zsh-better-npm-completion)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +99,4 @@ export LANG=en_US.UTF-8
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-nvm use 7
 

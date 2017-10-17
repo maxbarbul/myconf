@@ -7,7 +7,7 @@
 #
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
-fortune ru
+# fortune ru
 
 DEFAULT_USER="maksym"
 
@@ -17,14 +17,13 @@ xset r rate 150 50
 # change to their subdirectories from anywhere 
 # on the system without typing a full path
 setopt auto_cd
-cdpath=($HOME $HOME/work $HOME/work/bodyman /media/maksym/EPPLKRAW0541/Users/maksym_barbul/Documents/my/)
+cdpath=($HOME $HOME/work $HOME/work/caga $HOME/work/sf /media/maksym/EPPLKRAW0541/Users/maksym_barbul/Documents/my/)
 
-pr=~/work/cgbs-pricing/cgbs-pricing-web/src/main/webapp
-pa=~/work/cgbs-partner/cgbs-web-portal/src/main/webapp
+pr=~/work/caga/cgbs-pricing/cgbs-pricing-web/src/main/webapp/src
 
 # set npm packages to local folder
 NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="$NPM_PACKAGES/bin:$PATH:~/pear/bin"
+export PATH="$NPM_PACKAGES/bin:$PATH:~/pear/bin:./node_modules/.bin:../node_modules/.bin"
 
 # set man pages accessible by npm
 unset MANPATH
@@ -33,7 +32,7 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # set editing-mode vi
 export EDITOR=vim
 export PAGER=less
-export TERM=terminator
-
-source ~/.bash_npm_completion
+# export TERM=terminator
+source /usr/local/bin/aws_zsh_completer.sh
+# source ~/.bash_npm_completion
 

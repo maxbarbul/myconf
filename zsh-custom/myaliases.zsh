@@ -27,8 +27,12 @@ alias p="git pull --rebase "
 alias gp='git push'
 alias gpd='git push --dry-run'
 
+alias gr='git rebase'
+alias grm='git rebase master'
+
 alias gb='git branch'
 alias gbr='git branch --remote'
+alias gbd='git branch --delete'
 alias gbnm='git branch --no-merged'
 
 alias gbl='git blame -b -w'
@@ -40,4 +44,4 @@ alias node-update="npm cache clean -f && npm install -g n && sudo n stable"
 
 alias lock="gnome-screensaver-command -l"
 alias f="vifm"
-
+alias v="less -gM"
